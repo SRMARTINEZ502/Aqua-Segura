@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4fbff;
+    color: #17354a;
+}
+
+header {
+    background: #ffffff;
+    padding: 20px 8%;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #087eaa;
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #17354a;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #08a6c9;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+    linear-gradient(90deg, rgba(0,35,60,0.85), rgba(0,100,130,0.35)),
+    url("https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=1600&q=85");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.etiqueta {
+    color: #75e5f3;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    background: #08a6c9;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #056c91;
+    transform: translateY(-3px);
+}
+
+.problematica,
+.reportes,
+.recomendaciones {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.problematica h2,
+.reportes h2,
+.recomendaciones h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #087eaa;
+}
+
+.problematica p,
+.reportes p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.reportes {
+    background: #e2f7fc;
+}
+
+.reportes .boton {
+    margin-top: 25px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+}
+
+.tarjeta h3 {
+    color: #087eaa;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    line-height: 1.6;
+}
+
+footer {
+    background: #073b56;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
